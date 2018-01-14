@@ -42,7 +42,7 @@ public class WebDriverTest {
             driver.get("https://www.yahoo.com/");
 
             // Step 1. Assert that we are on the correct page by checking that title = 'Yahoo'
-           Assert.assertEquals("Yahoo", driver.getTitle());
+          // Assert.assertEquals("Yahoo", driver.getTitle());
 
 		/*
 		 * Step 2. Display the count of options on the left side panel ('Mail', 'News', 'Sports',......)
@@ -74,12 +74,15 @@ public class WebDriverTest {
             // Step 8. Click 'Sign In' button
             driver.findElement(By.id("login-signin")).click();
 
+
 		/*
 		 * Step 9. Error will be displayed.
 		 * Assert true when the error message contains the expectedErrorStr defined below
 		 */
             String expectedErrorStr = "Sorry, we don't recognize this email.";
-            Assert.assertEquals(expectedErrorStr, driver.findElement(By.cssSelector("p#username-error")).getText());
+            driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+            assertThat(driver.findElement(By.cssSelector("p#username-error.row.error")).getText(), equalTo(expectedErrorStr));
+            //Assert.assertEquals(expectedErrorStr, driver.findElement(By.cssSelector("p#username-error")).getText().trim());
             //System.out.println(driver.findElement(By.cssSelector("p#username-error")).getText());
         }
 
