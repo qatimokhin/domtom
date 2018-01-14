@@ -79,7 +79,8 @@ public class WebDriverTest {
 		 * Assert true when the error message contains the expectedErrorStr defined below
 		 */
             String expectedErrorStr = "Sorry, we don't recognize this email.";
-            Assert.assertEquals(expectedErrorStr, driver.findElement(By.cssSelector("p#username-error")).getText().toString());
+            Assert.assertEquals(expectedErrorStr, driver.findElement(By.cssSelector("p#username-error")).getText());
+            //System.out.println(driver.findElement(By.cssSelector("p#username-error")).getText());
         }
 
         /**

@@ -17,8 +17,8 @@
       <file leaf-file-name="WebDriverTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/WebDriverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="77" column="43" lean-forward="true" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+            <state relative-caret-position="606">
+              <caret line="80" column="78" lean-forward="true" selection-start-line="80" selection-start-column="78" selection-end-line="80" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -494,21 +494,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 11h 56m 32s.xml">
-      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 11h 58m 11s.xml">
-      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 03m 29s.xml">
-      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 06m 33s.xml">
-      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 06m 58s.xml">
-      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 07m 16s.xml">
       <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
     </history-entry>
@@ -522,6 +507,21 @@
       <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 21m 23s.xml">
+      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 39m 19s.xml">
+      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 12h 46m 50s.xml">
+      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 13h 00m 42s.xml">
+      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 13h 01m 40s.xml">
+      <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WebDriverTest_funWithYahooPage - 2018.01.14 at 13h 03m 41s.xml">
       <configuration name="WebDriverTest.funWithYahooPage" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -667,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WebDriverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="77" column="43" lean-forward="true" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+        <state relative-caret-position="606">
+          <caret line="80" column="78" lean-forward="true" selection-start-line="80" selection-start-column="78" selection-end-line="80" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
