@@ -1,4 +1,5 @@
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Assert;
@@ -6,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -46,6 +48,10 @@ public class WebDriverTest {
 		 * Step 2. Display the count of options on the left side panel ('Mail', 'News', 'Sports',......)
 		 * including 'More Yahoo Sites' option
 	 	 */
+            List<WebElement> webElementList = driver.findElements(By.cssSelector("div#mega-bottombar>ul>li"));
+
+
+            System.out.println(webElementList.size());
 
             // Step 3: Enter 'Nutrition' on the search bar on the top
             driver.findElement(By.id("uh-search-box")).sendKeys("Nutrition");
@@ -56,7 +62,7 @@ public class WebDriverTest {
             // Step 5: Display count of Images on the page
             System.out.println("Step 5. Images count ==> " + driver.findElements(By.tagName("img")).toString().length());
 
-            // Step 6. Click 'Sign In' button on the top left side
+            // Step 6. Click 'Sign In' button on the top left side (left? there is no such button on the left)
 
             driver.findElement(By.id("yucs-login_signIn")).click();
 
@@ -73,7 +79,7 @@ public class WebDriverTest {
 		 * Assert true when the error message contains the expectedErrorStr defined below
 		 */
             String expectedErrorStr = "Sorry, we don't recognize this email.";
-            Assert.assertEquals(expectedErrorStr, driver.findElement(By.id("username-error")).getText().toString());
+            Assert.assertEquals(expectedErrorStr, driver.findElement(By.cssSelector("p#username-error")).getText().toString());
         }
 
         /**
@@ -90,6 +96,7 @@ public class WebDriverTest {
          * Follow Steps below
          *
          */
+
 
         @Test
         public void funWithPayPalSignUpPage() {
