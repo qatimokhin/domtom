@@ -3,7 +3,10 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+import org.json.XML;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.apache.http.client.HttpClient;
 import static org.hamcrest.Matchers.*;
@@ -32,7 +35,7 @@ public class JavaTest {
     /**
      * Testing general Java String function knowledge
      */
-
+    @Ignore
     @Test
     public void funWithJavaStrings() {
 
@@ -59,7 +62,7 @@ public class JavaTest {
      * Testing knowledge of java Lists. The list 'myArrayList' has already been
      * created and populated in @before method. Follow steps outlined below.
      */
-
+    @Ignore
     @Test
     public void funWithArrayLists() {
 
@@ -106,6 +109,7 @@ public class JavaTest {
      * Testing knowledge of java HashMaps Follow steps outlined below
      */
 
+    @Ignore
     @Test
     public void funWithHashMaps() {
 
@@ -180,8 +184,12 @@ public class JavaTest {
          * ...hint the response content is returned in myHttpResponse.getEntity().getContent()
          * use BufferedReader
          */
+
+
         String body = EntityUtils.toString(myHttpResponse.getEntity());
-        System.out.println(body);
+        JSONObject xmlJSONObj = XML.toJSONObject(body);
+
+        System.out.println(xmlJSONObj.toString());
 
 
     }
@@ -189,6 +197,7 @@ public class JavaTest {
     /**
      * Testing knowledge of java HashSets Follow steps outlined below
      */
+    @Ignore
     @Test
     public void funWithHashSets() {
 
